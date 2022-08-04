@@ -16,25 +16,40 @@
     display: inline-flex;
     flex-direction: column;
     gap: 4px;
+    /* z-index: 1; */
+}
+
+.header-page{
+
 }
 
 #bar1,
 #bar2,
 #bar3{
+    /* position: relative; */
+    /* position: fixed; */
     background-color: #656972;
     width: 36px;
     height: 5px;
     cursor: pointer;
+    /* z-index: 1; */
 }
 .bar1-clicked {
     transform: rotate(45deg) translate(13px, 12px);
+    border: 3px solid #ff3e25;
+    /* position: fixed; */
+    z-index: 1;
 }
 .bar2-clicked{
     opacity: 0;
+    
 }
 
 .bar3-clicked{
     transform: rotate(-45deg);
+    border: 3px solid #ff3e25;
+    /* position: fixed; */
+    z-index: 1;
 }
 
 .main-content h2{
@@ -50,8 +65,9 @@
     font-size: 32px;
 }
 .main p{
-    z-index: 1;
-    backdrop-filter: blur(100px);
+    background-color: #faf8f8;
+    /* z-index: 1; */
+    /* backdrop-filter: blur(100px); */
 }
 
 #main-program{
@@ -59,7 +75,7 @@
     background-image: url('./image/main_pograme_background_pattern.png');
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 #lecture,
@@ -79,20 +95,15 @@
 }
 
 .join{
-    /* display: inline-block; */
     width: 60%;
     align-self: center;
     height: 50px;
-    /* width: 35px; */
-    /* float: right; */
     text-align: center;
     background-color: #ff3e25;
     text-decoration: none;
     color: white;
     border: 0;
     margin-top: 30px;
-    /* align-items: center; */
-    /* vertical-align: middle; */
 }
 
 .speaker-info{
@@ -108,14 +119,9 @@
 
 .footer{
     font-size: 10px;
-    vertical-align: middle;
     align-items: center;
 }
 
-.footer-logo{
-    width: 140px;
-    height: 30px;
-}
 .rights h5{
     font-size: 1.25em;
 }
@@ -124,7 +130,68 @@
     font-size: .85em;
 }
 
+.mobile-menu{
+    display: none;
 
+}
+.mobile-menu-trans{
+    padding-left: 20px;
+    display: block;
+    position: fixed;
+    height: 100vh;
+    opacity: .95;
+}
+
+.menu a {
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu li{
+    color: #ec5242;
+}
+
+.header-logo {
+    display: none;
+}
+.footer-logo {
+    width: 140px;
+    height: 30px;
+}
+
+.desktop-menu a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu-desktop{
+    /* float: right; */
+    flex-flow: wrap;
+    /* display: none; */
+}
+
+.desktop-menu{
+    display: none;
+}
+.desk-header-menu{
+    /* vertical-align: middle; */
+    align-items: baseline;
+    background-color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .header{
+        display: none;
+    }
+
+    .header-logo {
+        display: inline-block;
+    }
+
+    .desktop-menu{
+        display: block;
+    }
+}
 
 
 

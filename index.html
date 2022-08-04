@@ -12,9 +12,34 @@
     <title>CC Summit-2022</title>
 </head>
 <body>
-    <div class="full container p-0">
+    <div class="header-page">
+        <div class="mobile-menu container-fluid pt-5 gap-5 bg-dark">
+            <ul class="menu container-fluid gap-1 fs-1 p-5">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./about.html"><li>About</li></a>
+                <a href="#main-program"><li>Program</li></a>
+                <a href="#main-program"><li>Join</li></a>
+                <a href="#partner"><li>Sponsor</li></a>
+                <a href=""><li>News</li></a>
+                <a href="./about.html"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="desk-header-menu d-flex justify-content-between">
+            <a href=""><img class="header-logo" src="./image/headerLogo.png" alt="logo"></a>
+            <div class="desktop-menu">
+                <ul class="menu-desktop d-flex">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="#main-program"><li>Program</li></a>
+                    <a href="#main-program"><li>Join</li></a>
+                    <a href="#partner"><li>Sponsor</li></a>
+                    <a href=""><li>News</li></a>
+                    <a href="./about.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </div>
         <div class="top container-fluid pt-4 p-4">
-            <header class="header">
+            <header class="header position-fixed">
                 <div class="bar" id="bar1"></div>
                 <div class="bar" id="bar2"></div>
                 <div class="bar" id="bar3"></div>
@@ -24,8 +49,10 @@
                     <h2>"Hello Sharing World"</h2>
                     <H1>CARBON CAPTURE SUMMIT - 2022</H1>
                 </div>
+                
                 <p class="border border-3 border-white">Welcome to the Carbon Capture Summit 2022, where industry leaders will meet in Amsterdam to explore next-generation technologies for carbon capture, utilisation, storage, and transportation to meet net-zero emissions targets.</p>
                 <h2 class="text-dark">2022.11.24(THR) ~ 25(FRI)</h2>
+                
                 <h5>National Museum, Van Der Valk, Amsterdam, Netherlands</h5>
             </main>
         </div>
@@ -56,7 +83,7 @@
                     <h5 class=" program-info text-danger font-weight-bold w-25">CC Ignite</h5>
                 <p class="program-details w-50 text-white m-0">Get opportunities to network with CC afilited around the world, also after summit.</p>
             </div>
-            <button class="join">Join CC Summit 2022</button>
+            <button id="join" class="join">Join CC Summit 2022</button>
         </div>
     </div>
 
@@ -112,12 +139,19 @@
             </div>
         </div>
     </div>
-    <div class="partner">
+    <div class="partner" id="partner">
         <h2 class="partners_heading text-center text-white pt-4">Partners</h2>
         <h3 class="text-danger text-center">____</h3>
+        <div class="parner-logo d-flex justify-content-center justify-content-around flex-wrap p-4 gap-2">
+            <h2 class="text-light">mozilla</h2>
+            <h2 class="fs-2 font-monospace fw-light">Google</h2>
+            <h2 class="fw-bolder fs-1">NAVER</h2>
+            <h2 class="fs-3">daumkkao</h2>
+            <h2 class="">airbnb</h2>
+        </div>
     </div>
     <footer class="footer d-flex justify-content-between p-4">
-        <img class="footer-logo" src="./image/footer-logo.png" alt="">
+        <img class="footer-logo" src="./image/footer-logo.png" alt="logo">
         <div class="rights">
             <h5>Creative Comon Korea 2022</h5>
             <h5>Some Rights Reserved.</h5>
