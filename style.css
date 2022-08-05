@@ -26,18 +26,14 @@
 #bar1,
 #bar2,
 #bar3{
-    /* position: relative; */
-    /* position: fixed; */
     background-color: #656972;
     width: 36px;
     height: 5px;
     cursor: pointer;
-    /* z-index: 1; */
 }
 .bar1-clicked {
     transform: rotate(45deg) translate(13px, 12px);
-    border: 3px solid #ff3e25;
-    /* position: fixed; */
+    border: 3px solid white;
     z-index: 1;
 }
 .bar2-clicked{
@@ -47,8 +43,7 @@
 
 .bar3-clicked{
     transform: rotate(-45deg);
-    border: 3px solid #ff3e25;
-    /* position: fixed; */
+    border: 3px solid white;
     z-index: 1;
 }
 
@@ -66,20 +61,27 @@
 }
 .main p{
     background-color: #faf8f8;
-    /* z-index: 1; */
-    /* backdrop-filter: blur(100px); */
 }
 
 #main-program{
     background-color: rgb(39, 42, 50);
     background-image: url('./image/main_pograme_background_pattern.png');
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    /* vertical-align: middle; */
+}
+
+.main-pogram-content{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #lecture,
-#cc-exhibition{
+#cc-exhibition,
+#forum,
+#workshop,
+#cc-ignite
+{
     background-color: rgba(200, 200, 200, 0.1);
     align-items: center;
 
@@ -139,6 +141,7 @@
     display: block;
     position: fixed;
     height: 100vh;
+    overflow-y: hidden;
     opacity: .95;
 }
 
@@ -158,14 +161,34 @@
     height: 30px;
 }
 
+.desk-header-menu{
+    display: none;
+}
+
 .desktop-menu a{
     text-decoration: none;
     list-style-type: none;
 }
 .menu-desktop{
-    /* float: right; */
     flex-flow: wrap;
-    /* display: none; */
+}
+
+.menu-desktop > a >li{
+    font-size: .75rem;
+    padding: 5px;
+    border: 4px solid white;
+    /* color: #ff3e25; */
+}
+
+
+.menu-desktop > a >li:visited{
+    color: #ff3e25;
+}
+
+
+.menu-desktop > a >li:hover{
+    border: 4px solid #ec5242;
+    /* color: #ff3e25; */
 }
 
 .desktop-menu{
@@ -177,8 +200,28 @@
     background-color: white;
 }
 
+.dropdown{
+    display: none;
+}
+
+.dropdown-dispaly{
+    display: block;
+}
+
+.dropdown-arrow{
+    margin: 10px; 
+    /* display: none;  */
+}
+
+.dropdown-arrow-reverse{
+    transform: rotateZ(180deg);
+}
 
 @media screen and (min-width: 768px) {
+
+    .desk-header-menu{
+        display: flex;
+    }
 
     .header{
         display: none;
@@ -191,6 +234,18 @@
     .desktop-menu{
         display: block;
     }
+    .dropdown{
+        display: block;
+    }
+    .dropdown-arrow-div{
+        display: none;
+    }
+    #main-program{
+        margin: 0 0 0 0;
+        /* display: flex; */
+    }
+
+    
 }
 
 
