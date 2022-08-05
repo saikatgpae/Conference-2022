@@ -71,6 +71,7 @@
 }
 
 .main-pogram-content{
+    margin: 8px;
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -94,6 +95,21 @@
 
 .program-details{
     font-size: 13px;
+}
+
+
+.see-the-pogram{
+    display: none;
+    color: #d3d3d3;
+}
+
+#see-the-pogram{
+    /* display: none; */
+    text-decoration-color: #d3d3d3;
+}
+
+#join-div{
+    
 }
 
 .join{
@@ -200,13 +216,16 @@
     background-color: white;
 }
 
-.dropdown{
+.speaker-6, .speaker-5, .speaker-4{
     display: none;
 }
 
 .dropdown-dispaly{
     display: block;
 }
+
+
+
 
 .dropdown-arrow{
     margin: 10px; 
@@ -244,8 +263,50 @@
         margin: 0 0 0 0;
         /* display: flex; */
     }
+    .speaker-details,
+    .dropdown{
+    display: grid;
+    grid-template-columns: auto auto;
+    }
 
-    
+    .speaker-6, .speaker-5, .speaker-4{
+        display: block;
+    }
+
+    .speaker-details{
+        padding: 100px;
+    }
+    .main >p{
+        background-color: white;
+    }
+
+    #join-div{
+        display: none;
+    }
+
+    .mpcontents{
+        display: flex;
+    }
+
+    #main-program{
+        padding: 100px;
+    }
+
+    .main-pogram-content{
+        margin: 0;
+        display: block;
+        text-align: -webkit-center;
+        border: 2px solid rgb(39, 42, 50);
+    }
+
+    .main-pogram-content:hover{
+        border: 2px solid white;
+    }
+
+    .see-the-pogram{
+        display: block;
+    }
+
 }
 
 

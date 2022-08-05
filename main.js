@@ -25,6 +25,11 @@ menu.forEach((link)=>{link.addEventListener('click',()=>{
 //activating the dropdown menu
 const dropDown = document.querySelector('.dropdown-arrow');
 dropDown.addEventListener('click',()=>{
-    document.querySelector('.dropdown').classList.toggle('dropdown-dispaly');
+    //dispalying the hidden speakers
+    document.querySelector('.speaker-6').classList.toggle('dropdown-dispaly');
+    document.querySelector('.speaker-5').classList.toggle('dropdown-dispaly');
+    document.querySelector('.speaker-4').classList.toggle('dropdown-dispaly');
+    
+    //turning the arrow sighn to 180 degree
     document.querySelector('.dropdown-arrow').classList.toggle('dropdown-arrow-reverse');
 });
