@@ -12,7 +12,16 @@
     <title>CC Summit-2022</title>
 </head>
 <body>
-    <div class="header-page">
+    <section class="header-page">
+        <nav class="text-white bg-dark justify-content-end" id="login">
+            <ul class="d-flex gap-4 fs-5">
+                <li><a href=""><img src="./image/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="./image/facebook.png" alt=""></a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">My page</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
         <div class="mobile-menu container-fluid pt-5 gap-5 bg-dark">
             <ul class="menu gap-1 fs-5 p-5">
                 <li><a href="./index.html">Home</a></li>
@@ -38,127 +47,71 @@
                 </div>
             </div>
         </div>
-        <div class="top container-fluid pt-4 p-4">
+        <div class="top container p-4">
             <header class="header position-fixed">
                 <div class="bar" id="bar1"></div>
                 <div class="bar" id="bar2"></div>
                 <div class="bar" id="bar3"></div>
             </header>
-            <main class="main">
+            <div class="main">
                 <div class="main-content pt-5">
                     <h2>"Hello Sharing World"</h2>
-                    <H1>CARBON CAPTURE SUMMIT - 2022</H1>
+                    <H1 class="heading">CARBON CAPTURE SUMMIT - 2022</H1>
                 </div>
-                
-                <p class="border border-3 border-white">Welcome to the Carbon Capture Summit 2022, where industry leaders will meet in Amsterdam to explore next-generation technologies for carbon capture, utilisation, storage, and transportation to meet net-zero emissions targets.</p>
-                <h2 class="text-dark">2022.11.24(THR) ~ 25(FRI)</h2>
+                <p class="welcome border border-3 border-white p-0">Welcome to the Carbon Capture Summit 2022, where industry leaders will meet in Amsterdam to explore next-generation technologies for carbon capture, utilisation, storage, and transportation to meet net-zero emissions targets.</p>
+                <h2 class="text-dark fw-bolder">2022.11.24(THR) ~ 25(FRI)</h2>
                 
                 <h5>National Museum, Van Der Valk, Amsterdam, Netherlands</h5>
-            </main>
+            </div>
         </div>
-        <div class="" id="main-program">
+        <section class="" id="main-program">
             <h3 class="text-white text-center pt-4">Main Program</h3>
             <h3 class="text-danger text-center">____</h3>
             <div class="mpcontents">
-                <div class="main-pogram-content justify-content-between" id="lecture">
+                <article class="main-pogram-content justify-content-between" id="lecture">
                     <a href=""><img class="" src="./image/lecture.png" alt="lecture logo"></a>
                         <h5 class=" program-info text-danger font-weight-bold w-25">lecture</h5>
                     <p class="program-details w-50 text-white m-0">Listen the speakers from various countries abouth the message of sharing and opening.</p>
-                </div>
-                <div class="main-pogram-content  justify-content-between" id="cc-exhibition">
+                </article>
+                <article class="main-pogram-content  justify-content-between" id="cc-exhibition">
                     <a href=""><img class="" src="./image/cc_exhibition.png" alt="cc-exhibition logo"></a>
                     <h5 class="program-info text-danger font-weight-bold w-25">CC Exhibition</h5>
                     <p class="program-details w-50 text-white m-0">Appreciate various creating applying CC liscence of artists, Organize from art center nabi.</p>
-                </div>
-                <div class="main-pogram-content  justify-content-between" id="forum">
+                </article>
+                <article class="main-pogram-content  justify-content-between" id="forum">
                     <a href=""><img class="" src="./image/forum.png" alt="lecture logo"></a>
                         <h5 class=" program-info text-danger font-weight-bold w-25">Forum</h5>
                     <p class="program-details w-50 text-white m-0">Have the time to share your thoughts and opinions with experts for each topic.</p>
-                </div>
-                <div class="main-pogram-content  justify-content-between" id="workshop">
+                </article>
+                <article class="main-pogram-content  justify-content-between" id="workshop">
                     <a href=""><img class="" src="./image/workshop.png" alt="lecture logo"></a>
                         <h5 class=" program-info text-danger font-weight-bold w-25">Workshop</h5>
                     <p class="program-details w-50 text-white m-0">Try to create your own creations using open source rather than just watching.</p>
-                </div>
-                <div class="main-pogram-content justify-content-between" id="cc-ignite">
+                </article>
+                <article class="main-pogram-content justify-content-between" id="cc-ignite">
                     <a href=""><img class="" src="./image/program_icon.png" alt="lecture logo"></a>
                         <h5 class=" program-info text-danger font-weight-bold w-25">CC Ignite</h5>
                     <p class="program-details w-50 text-white m-0">Get opportunities to network with CC afilited around the world, also after summit.</p>
-                </div>
+                </article>
             </div>
             <a href="" id="see-the-pogram"><h5 class="see-the-pogram text-white text-center pt-4 fs-6">SEE THE WHOLE POGRAM</h5></a>
             <div class="text-center pb-4" id="join-div">
                 <button id="join" class="join" type="button">Join CC Summit 2022</button>
             </div>
-        </div>
-    </div>
-
-    <div class="speakers">
-        <h2 class="text-dark pt-4 text-center" id="speakers">"Featured Speakers"</h2>
+        </section>
+    </section>
+    <section class="speakers">
+        <h2 class="text-dark pt-4 text-center fw-bolder" id="speakers">Featured Speakers</h2>
         <h3 class="text-danger text-center">____</h3>
         <div class="speaker-details">
-            <div class="d-flex justify-content-center justify-content-between p-4" id="speaker-1">
-                <a href=""><img class="speaker" src="./image/speaker_01.png" alt="Speaker 1 photo"></a>
-                <div class="speaker-info p-2">
-                    <h3 class="text-dark">Yochai Benkelar</h3>
-                    <p class="speaker-prof fst-italic">Berkman Professor of Enterpreneurial Leagal studies at Heverd School</p>
-                    <p>Benkellar studies comon-based peer productio and published his seminal book. The wealth of Networks 2006.</p>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center justify-content-between p-4" id="speaker-2">
-                <a href=""><img class="speaker" src="./image/speaker_02.png" alt="Speaker 1 photo"></a>
-                <div class="speaker-info p-2">
-                    <h3 class="text-dark">Kilnam Chon</h3>
-                    <p class="speaker-prof fst-italic"></p>
-                    <p>Helped bring the internet to Asia and is an out standing advocate open air digital commons. In 2012 he was inducted to inaugral class of internet society.</p>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center justify-content-between p-4" id="speaker-3">
-                <a href=""><img class="speaker" src="./image/speaker_03.png" alt="Speaker 1 photo"></a>
-                <div class="speaker-info p-2">
-                    <h3 class="text-dark">SohYeong Noh</h3>
-                    <p class="speaker-prof fst-italic">Director of Art Nobi and Board Member of CC Korea.</p>
-                    <p>As the main venue for new mwdia Art production in Korea, Nabi promotes cross diciplinary collaboration and understanding among science technology, humanities and art.</p>
-                </div>
-            </div>
-            <div class="speaker-4">
-                <div class="d-flex justify-content-center justify-content-between p-4">
-                    <a href=""><img class="speaker" src="./image/speaker_04.png" alt="Speaker 1 photo"></a>
-                    <div class="speaker-info p-2">
-                        <h3 class="text-dark">Julia Leda</h3>
-                        <p class="speaker-prof fst-italic">president of young pirates of Europe.</p>
-                        <p>European ingetration, political democracy and participation of youth through online as her major concern. Reda's report outlining potential changes to EU copyright law was approved by the parliament by July.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker-5">
-                <div class="d-flex justify-content-center justify-content-between p-4">
-                    <a href=""><img class="speaker" src="./image/speaker_05.png" alt="Speaker 1 photo"></a>
-                    <div class="speaker-info p-2">
-                        <h3 class="text-dark">Lila Tretikov</h3>
-                        <p class="speaker-prof fst-italic">Executive Director of Wikimedia Foundation</p>
-                        <p>Lila Tretikov Executive Director of Wikimedia Foundation, non profit organization that operats wikipedia. Wekipedia is freely availble in 290 languages and used by half billion people around the world every month.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker-6">
-                <div class="d-flex justify-content-center justify-content-between p-4" >
-                    <a href=""><img class="speaker" src="./image/speaker_06.png" alt="Speaker 1 photo"></a>
-                    <div class="speaker-info p-2">
-                        <h3 class="text-dark">Ryan Merkley</h3>
-                        <p class="speaker-prof fst-italic">CEO of Creative Commons. Ex COO of Mozila foundation</p>
-                        <p>Ryan had been leading open source project at the Mozila foundation such as the open sourse moment.</p>
-                    </div>
-                </div> 
-            </div>
         </div>
         <div class="dropdown-arrow-div">
             <div class="dropdown-arrow d-flex justify-content-center border p-4">
                 <img src="./image/down_arrow.png" alt="">
             </div>
         </div>                  
-    </div>
-    <div class="partner" id="partner">
+    </section>
+    <section class="partner" id="partner">
         <h2 class="partners_heading text-center text-white pt-4">Partners</h2>
         <h3 class="text-danger text-center">____</h3>
         <div class="parner-logo d-flex justify-content-center justify-content-around flex-wrap p-4 gap-2">
@@ -168,7 +121,7 @@
             <h2 class="fs-3">daumkkao</h2>
             <h2 class="">airbnb</h2>
         </div>
-    </div>
+    </section>
     <footer class="footer d-flex justify-content-around p-4">
         <img class="footer-logo" src="./image/footer-logo.png" alt="logo">
         <div class="rights">
@@ -177,5 +130,6 @@
         </div>
     </footer>
     <script src="./main.js"></script>
+    <script src="./about.js"></script>
 </body>
 </html>

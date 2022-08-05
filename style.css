@@ -3,6 +3,11 @@
   color: #656972;
 }
 
+#login {
+  display: none;
+  align-items: baseline;
+}
+
 .top {
   background-color: #d3d3d3;
   background-image: url('./image/background.jpeg');
@@ -49,6 +54,7 @@
 }
 
 .main-content h1 {
+  margin: 0;
   background-image: url('./image/word_background.jpeg');
   -webkit-background-clip: text;
   color: transparent;
@@ -63,8 +69,6 @@
 #main-program {
   background-color: rgb(39, 42, 50);
   background-image: url('./image/main_pograme_background_pattern.png');
-
-  /* display: flex; */
   flex-direction: column;
 }
 
@@ -98,7 +102,6 @@
 }
 
 #see-the-pogram {
-  /* display: none; */
   text-decoration-color: #d3d3d3;
 }
 
@@ -205,9 +208,11 @@
   background-color: white;
 }
 
-.speaker-6,
-.speaker-5,
-.speaker-4 {
+.speaker {
+  display: flex;
+}
+
+.dropdown-dispaly-invisible {
   display: none;
 }
 
@@ -227,7 +232,40 @@
   width: 100%;
 }
 
+.footer-logo-about {
+  display: none;
+}
+
+.mpcontents {
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 768px) {
+  #login {
+    display: flex;
+    padding-right: 100px;
+  }
+
+  #login li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  #login li > a {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 52px;
+    width: 60%;
+  }
+
+  .top {
+    padding-left: 100px;
+  }
+
   .desk-header-menu {
     display: flex;
   }
@@ -270,11 +308,7 @@
   }
 
   .speaker-details {
-    padding: 100px;
-  }
-
-  .main > p {
-    background-color: white;
+    padding: 10px 150px 10px 150px;
   }
 
   #join-div {
@@ -282,6 +316,7 @@
   }
 
   .mpcontents {
+    margin-top: 40px;
     display: flex;
   }
 
@@ -308,5 +343,36 @@
 
   #partner {
     display: none;
+  }
+
+  .footer {
+    /* background-color: #272a31; */
+    color: #efecec;
+    padding: 100px;
+  }
+
+  .rights {
+    margin-right: 200px;
+  }
+
+  .footer-logo-about {
+    display: block;
+  }
+
+  .history {
+    display: flex;
+  }
+
+  .contact {
+    padding-top: 20px;
+  }
+
+  .main {
+    padding-left: 100px;
+  }
+
+  .main p {
+    background-color: #faf8f8;
+    width: 70%;
   }
 }
