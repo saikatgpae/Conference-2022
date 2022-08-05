@@ -305,4 +305,8 @@
   #logo-aboutme {
     width: 400px;
   }
+
+  #partner{
+    display: none;
+  }
 }
