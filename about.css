@@ -1,0 +1,60 @@
+.about-content h2 {
+  color: #ec5242;
+}
+
+.about-content h1 {
+  color: #ec5242;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.main-about > p {
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content h2 {
+    color: #ec5242;
+  }
+
+  .about-content h1 {
+    color: #ec5242;
+    font-size: 52px;
+    font-weight: 900;
+  }
+
+  .footer {
+    background-color: #272a31;
+    color: #efecec;
+    padding: 100px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-logo-about {
+    display: block;
+  }
+
+  .history {
+    display: flex;
+    padding: 0 100px 100px 100px;
+    justify-items: center;
+    margin: 0;
+  }
+
+  .history img {
+    overflow: hidden;
+  }
+
+  .rights h5 {
+    color: white;
+    margin-right: 250px;
+  }
+
+  .main-about {
+    width: 50%;
+    margin: auto;
+  }
+}
