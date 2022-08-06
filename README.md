@@ -13,7 +13,11 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://saikatgpae.github.io/Conference-2022/)
+
+## Video demo
+
+[Video demo](https://drive.google.com/file/d/1kWh_0mGH8f8eBQB1Cg7cL8JUbNlyVsH_/view?usp=sharing)
 
 ## Getting Started
 
@@ -36,6 +40,9 @@ git clone https://github.com/saikatgpae/Conference-2022.git
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+Credit to [@Cindy Shin](https://www.behance.net/adagio07) the author of the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+
+
 
 - Hat tip to anyone whose code was used
 - Inspiration
