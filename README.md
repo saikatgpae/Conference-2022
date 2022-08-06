@@ -15,9 +15,6 @@
 
 [Live Demo Link](https://saikatgpae.github.io/Conference-2022/)
 
-## Video demo
-
-[Video demo](https://drive.google.com/file/d/1kWh_0mGH8f8eBQB1Cg7cL8JUbNlyVsH_/view?usp=sharing)
 
 ## Getting Started
 
